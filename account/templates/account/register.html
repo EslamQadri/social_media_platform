@@ -1,0 +1,11 @@
+{%extends 'base.html'%}
+{%block title %}Create an account {%endblock %}
+{%block content %}
+<h1> Create an account </h1>
+<p>Plz singup in it :</p>
+<form method="post">
+{%csrf_token%}
+{{user_form.as_p}}
+<p><input type='submit' value="Create My Account" ></p>
+</form>
+{%endblock %}
